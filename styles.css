@@ -36,6 +36,7 @@ section {
 img {
   width: 100%;
   max-width: 100%;
+  border-radius: 30%;
 }
 
 a {
@@ -658,3 +659,31 @@ footer {
     transform: translateY(-1rem);
   }
 }
+.card-img-top {
+  width: 100%; /* Assurez que l'image occupe toute la largeur de la carte */
+  height: 200px; /* Fixez une hauteur pour toutes les images */
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans déformation */
+}
+/* Style pour le paragraphe de signature */
+.signature {
+  font-size: 2rem;
+  font-style: italic;
+  color: #ffa500;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeInSignature 2s ease-in-out forwards;
+}
+
+/* Animation pour la signature */
+@keyframes fadeInSignature {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
